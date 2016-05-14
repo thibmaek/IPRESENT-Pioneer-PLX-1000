@@ -91,7 +91,7 @@
         <!--Videos-->
         <scene sceneID="8Xs-Ej-7Gj">
             <objects>
-                <viewController id="3WW-mG-GJP" sceneMemberID="viewController">
+                <viewController id="3WW-mG-GJP" customClass="VideosViewController" customModule="Turntablism" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dO3-BR-06x"/>
                         <viewControllerLayoutGuide type="bottom" id="Znx-mK-e9c"/>
