@@ -14,15 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YouTubePlayer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>42734DDF56C08BCCD555408E2E981AFF</key>
+		<key>5D4742E1435D573DC31A9CA89996832D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43080E9B21D5263D83C21DBCEE0063F4</key>
+		<key>6D97F95C0DE85002F7F79ACB4A251C00</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77D31A0B01934847B553C1317A471F8B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

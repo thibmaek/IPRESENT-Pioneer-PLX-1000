@@ -35,7 +35,7 @@
                                             <action selector="resetButton:" destination="Id8-np-TXg" eventType="touchUpInside" id="GWh-CP-C1k"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNO-Hh-LC5">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNO-Hh-LC5">
                                         <rect key="frame" x="129" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
@@ -49,7 +49,7 @@
                                             <action selector="buttonGreen:" destination="Id8-np-TXg" eventType="touchUpInside" id="V1V-Zi-LjF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-e4-J49">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-e4-J49">
                                         <rect key="frame" x="386" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
@@ -99,9 +99,47 @@
                     <view key="view" contentMode="scaleToFill" id="Lxk-i9-Get">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" indicatorStyle="black" minimumZoomScale="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="oAn-Sz-oDV">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yov-N2-Ggp">
+                                        <rect key="frame" x="8" y="8" width="584" height="674"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZm-X0-h7w" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                                <rect key="frame" x="0.0" y="0.0" width="584" height="329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shj-PL-InN" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                                <rect key="frame" x="0.0" y="345" width="584" height="329"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="RZm-X0-h7w" firstAttribute="centerX" secondItem="yov-N2-Ggp" secondAttribute="centerX" id="f4r-WG-pnd"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yov-N2-Ggp" secondAttribute="trailing" constant="8" id="1WY-GM-vyq"/>
+                                    <constraint firstItem="yov-N2-Ggp" firstAttribute="top" secondItem="oAn-Sz-oDV" secondAttribute="top" constant="8" id="avZ-bu-ECH"/>
+                                    <constraint firstItem="yov-N2-Ggp" firstAttribute="leading" secondItem="oAn-Sz-oDV" secondAttribute="leading" constant="8" id="zpo-SG-oj7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oAn-Sz-oDV" secondAttribute="trailing" constant="-20" id="Rcb-ia-6cj"/>
+                            <constraint firstItem="oAn-Sz-oDV" firstAttribute="top" secondItem="dO3-BR-06x" secondAttribute="bottom" id="To5-uE-iuz"/>
+                            <constraint firstItem="Znx-mK-e9c" firstAttribute="top" secondItem="oAn-Sz-oDV" secondAttribute="bottom" id="kr8-nm-t9x"/>
+                            <constraint firstItem="oAn-Sz-oDV" firstAttribute="leading" secondItem="Lxk-i9-Get" secondAttribute="leadingMargin" constant="-20" id="sHV-7U-rcV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Videos" image="VideoIcon" id="jig-QU-aAU" userLabel="Videos"/>
+                    <connections>
+                        <outlet property="video1" destination="RZm-X0-h7w" id="YHE-Ni-Lkg"/>
+                        <outlet property="video2" destination="Shj-PL-InN" id="2CO-In-eT4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ek6-kI-9Fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
