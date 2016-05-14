@@ -4,8 +4,9 @@
 use_frameworks!
 
 target 'Turntablism' do
-
-pod 'UIColor-Hex-Swift'
-
+  
+  pod 'UIColor-Hex-Swift'
+  pod 'YouTubePlayer'
+  
 end
 
