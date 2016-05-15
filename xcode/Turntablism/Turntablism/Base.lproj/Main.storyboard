@@ -17,9 +17,39 @@
                     <view key="view" contentMode="scaleToFill" id="kZr-AH-FPZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIo-Am-Iqi">
+                                <rect key="frame" x="20" y="327" width="560" height="204"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">The PLX-1000 is precision engineered for the booth, drawing on 50 years’ experience of making high-end turntables. The result is a familiar layout with some next generation improvements, including a high-torque direct drive system, multi-pitch control, club-grade build and sound quality, and detachable power and audio cables. It’s solidly built for excellent vibration damping and ultra-precise, high-grade audio playback.
+
+Combine the PLX-1000 with your DJM mixer for the ideal set-up for turntablists and vinyl enthusiasts.
+
+KEY FEATURES:
+✓ The high-torque direct drive ensures stable rotation and exceptional control – and it reaches 33⅓ rpm in just 0.3 seconds thanks to a starting torque of 4.5kg/cm (or more).
+✓ Multi-tempo control lets you instantly pick up or slow down the track to ±8%, ±16% and ±50%, while a simple reset button instantly reverts to ±0%.
+✓ Interchangeable power and audio cables can be easily connected and replaced, and pro-grade gold-plated RCA jacks ensure low impedance and an amazing sound quality.
+
+See all specifications at http://www.pioneerdj.com/en/product/turntable/plx-1000/gold/overview/#/color-picker</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19997376203536987" green="0.20001503825187683" blue="0.19997116923332214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NIo-Am-Iqi" firstAttribute="leading" secondItem="kZr-AH-FPZ" secondAttribute="leadingMargin" id="NA8-Tv-tBe"/>
+                            <constraint firstItem="NIo-Am-Iqi" firstAttribute="trailing" secondItem="kZr-AH-FPZ" secondAttribute="trailingMargin" id="dRZ-VA-VKZ"/>
+                            <constraint firstItem="o3K-jb-fCG" firstAttribute="top" secondItem="NIo-Am-Iqi" secondAttribute="bottom" constant="20" id="nNy-Jt-wwO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Features" image="ProductFeaturesIcon" id="NzC-SU-3Ok"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="textview" destination="NIo-Am-Iqi" id="amQ-Zr-Ybg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eI0-WX-gZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,11 +64,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Znx-mK-e9c"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Lxk-i9-Get">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="951"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" showsHorizontalScrollIndicator="NO" indicatorStyle="black" minimumZoomScale="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="oAn-Sz-oDV">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="887"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yov-N2-Ggp">
                                         <rect key="frame" x="8" y="8" width="584" height="674"/>
@@ -73,14 +103,17 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Videos" image="VideoIcon" id="jig-QU-aAU" userLabel="Videos"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1000"/>
                     <connections>
+                        <outlet property="scrollview" destination="oAn-Sz-oDV" id="DkN-wL-dhX"/>
                         <outlet property="video1" destination="RZm-X0-h7w" id="YHE-Ni-Lkg"/>
                         <outlet property="video2" destination="Shj-PL-InN" id="2CO-In-eT4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ek6-kI-9Fo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2473" y="607"/>
+            <point key="canvasLocation" x="2435" y="807"/>
         </scene>
         <!--Instagram-->
         <scene sceneID="WXp-PF-j86">
@@ -99,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7BU-gM-zAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1788" y="607"/>
+            <point key="canvasLocation" x="1772" y="607"/>
         </scene>
         <!--Overview-->
         <scene sceneID="qF5-bU-mxN">

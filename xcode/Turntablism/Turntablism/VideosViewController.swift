@@ -11,6 +11,7 @@ import YouTubePlayer
 
 class VideosViewController: UIViewController {
 
+  @IBOutlet weak var scrollview: UIScrollView!
   @IBOutlet weak var video1: YouTubePlayerView!
   @IBOutlet weak var video2: YouTubePlayerView!
 
@@ -18,6 +19,8 @@ class VideosViewController: UIViewController {
     super.viewDidLoad()
     video1.loadVideoID("rMF0pYZfuQk")
     video2.loadVideoID("Rq1n2M4hGCw")
+    scrollview.contentSize = CGSize(width: 0, height: 0)
+    scrollview.backgroundColor = UIColor.colorWithCSS("333")
   }
 
   // MARK: - Set navigation title for this tab

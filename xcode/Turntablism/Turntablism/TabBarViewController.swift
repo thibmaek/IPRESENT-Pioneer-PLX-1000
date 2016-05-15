@@ -14,7 +14,7 @@ class TabBarViewController: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.createActionButton()
-    self.selectedIndex = 1
+    self.selectedIndex = 2
   }
 
   // MARK: - Create centered action button
