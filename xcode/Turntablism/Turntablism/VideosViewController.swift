@@ -20,4 +20,10 @@ class VideosViewController: UIViewController {
     video2.loadVideoID("Rq1n2M4hGCw")
   }
 
+  // MARK: - Set navigation title for this tab
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.tabBarController?.navigationItem.title = "PLX-1000 Product Videos"
+  }
+
 }

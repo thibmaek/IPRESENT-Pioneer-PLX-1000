@@ -46,7 +46,7 @@
                                             <action selector="buttonMagenta:" destination="Id8-np-TXg" eventType="touchUpInside" id="wUN-6q-RnK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4f-I6-Cm9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4f-I6-Cm9">
                                         <rect key="frame" x="242" y="0.0" width="73" height="22"/>
                                         <state key="normal" title=" Green" image="LedGreen">
                                             <color key="titleColor" red="0.45882352941176469" green="1" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,7 +55,7 @@
                                             <action selector="buttonGreen:" destination="Id8-np-TXg" eventType="touchUpInside" id="V1V-Zi-LjF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-e4-J49">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QI7-e4-J49">
                                         <rect key="frame" x="358" y="0.0" width="75" height="22"/>
                                         <state key="normal" title=" Yellow" image="LedYellow">
                                             <color key="titleColor" red="0.6588235294117647" green="0.70588235294117652" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
@@ -64,7 +64,7 @@
                                             <action selector="buttonYellow:" destination="Id8-np-TXg" eventType="touchUpInside" id="2bD-Qp-Kzi"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRb-OU-PAs">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRb-OU-PAs">
                                         <rect key="frame" x="476" y="0.0" width="84" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title=" Orange" image="LedOrange">

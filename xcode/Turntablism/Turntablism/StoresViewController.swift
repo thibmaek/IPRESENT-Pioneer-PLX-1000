@@ -11,13 +11,13 @@ import MapKit
 import CoreLocation
 
 class StoresViewController: UIViewController {
-  
+
   @IBOutlet weak var mapview: MKMapView!
   var locationMgr = CLLocationManager()
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     // MARK: - Create & store pins
     let store1 = Store(coordinate: CLLocationCoordinate2DMake(51.226226, 4.413470),
                        title: "Bax-Shop", subtitle: "Stijfselrui 46,2000 Antwerpen")
@@ -29,9 +29,9 @@ class StoresViewController: UIViewController {
                        title: "KEYMUSIC Gent", subtitle: "Kasteellaan 1,9000 Gent")
     let store5 = Store(coordinate: CLLocationCoordinate2DMake(50.826687, 3.270127),
                        title: "Media Markt Kortrijk", subtitle: "Q-Park K in,Steenpoort 2,8500 Kortrijk")
-    
+
     let stores = [store1, store2, store3, store4, store5]
-    
+
     // MARK: - Show pins, setup map
     mapview.addAnnotations(stores)
     mapview.showsTraffic = false
@@ -43,5 +43,11 @@ class StoresViewController: UIViewController {
       }
     }
   }
-  
+
+  // MARK: - Set navigation title for this tab
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.tabBarController?.navigationItem.title = "Pioneer Resellers"
+  }
+
 }

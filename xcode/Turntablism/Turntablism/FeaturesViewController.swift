@@ -18,6 +18,13 @@ class FeaturesViewController: UIViewController {
     imageview.image = UIImage(named: "tt-black")
   }
 
+  // MARK: - Set navigation title for this tab
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.tabBarController?.navigationItem.title = "PLX-1000 Demo Mode"
+  }
+
+  // MARK: - Reset the image when the tab switches
   override func viewDidDisappear(animated: Bool) {
     changeImage("black")
   }
