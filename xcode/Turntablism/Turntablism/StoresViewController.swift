@@ -41,10 +41,12 @@ class StoresViewController: UIViewController {
     // fuck pls dont come here again
   }
 
-  // MARK: - Set navigation title for this tab
   override func viewWillAppear(animated: Bool) {
+    // MARK: - Set navigation title for this tab
     super.viewWillAppear(animated)
     self.tabBarController?.navigationItem.title = "Pioneer Resellers"
+
+    // MARK:- Check if app is permitted to use user location
     if CLLocationManager.locationServicesEnabled() {
       if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
         mapview.showsUserLocation = true

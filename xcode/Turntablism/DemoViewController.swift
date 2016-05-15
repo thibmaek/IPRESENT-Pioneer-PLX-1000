@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import Social
 
 class DemoViewController: UIViewController {
 
   @IBOutlet weak var imageview: UIImageView!
+  var model: String!
+  var currentColor: String!
 
   // MARK: - Load & Unload image to the view
   override func viewDidLoad() {
     super.viewDidLoad()
+    currentColor = "blue"
+    model = "black"
     imageview.image = UIImage(named: "tt-black")
   }
 
@@ -26,47 +31,68 @@ class DemoViewController: UIViewController {
 
   // MARK: - Reset the image when the tab switches
   override func viewDidDisappear(animated: Bool) {
-    changeImage("black")
+    changeImage(currentColor, model: model)
   }
 
   // MARK: - Dynamically change image trough sent color param
-  func changeImage(color: String) {
+  func changeImage(color: String, model: String) {
+    currentColor = color
+
     switch color {
     case "magenta":
-      imageview.image = UIImage(named: "tt-black-magenta")
+      imageview.image = UIImage(named: "tt-\(model)-magenta")
     case "yellow":
-      imageview.image = UIImage(named: "tt-black-yellow")
+      imageview.image = UIImage(named: "tt-\(model)-yellow")
     case "green":
-      imageview.image = UIImage(named: "tt-black-green")
+      imageview.image = UIImage(named: "tt-\(model)-green")
     case "orange":
-      imageview.image = UIImage(named: "tt-black-orange")
-    case "black":
-      imageview.image = UIImage(named: "tt-black")
+      imageview.image = UIImage(named: "tt-\(model)-orange")
+    case "blue":
+      imageview.image = UIImage(named: "tt-\(model)")
     default:
-      imageview.image = UIImage(named: "tt-black")
+      imageview.image = UIImage(named: "tt-\(model)")
     }
-
-    //    print("Color selected: \(color)")
   }
 
+  @IBAction func modelChanged(sender: UISwitch) {
+    if sender.on {
+      model = "gold"
+      changeImage(currentColor, model: model)
+    } else {
+      model = "black"
+      changeImage(currentColor, model: model)
+    }
+  }
+
+
+  // MARK:- IBActions for changing the LED
   @IBAction func resetButton(sender: UIButton) {
-    changeImage("black")
+    changeImage("blue", model: model)
   }
-
   @IBAction func buttonMagenta(sender: UIButton) {
-    changeImage("magenta")
+    changeImage("magenta", model: model)
   }
-
   @IBAction func buttonYellow(sender: UIButton) {
-    changeImage("yellow")
+    changeImage("yellow", model: model)
   }
-
   @IBAction func buttonOrange(sender: UIButton) {
-    changeImage("orange")
+    changeImage("orange", model: model)
+  }
+  @IBAction func buttonGreen(sender: UIButton) {
+    changeImage("green", model: model)
   }
 
-  @IBAction func buttonGreen(sender: UIButton) {
-    changeImage("green")
+  // MARK:- IBAction for sharing to Facebook
+  @IBAction func shareButton(sender: UIButton) {
+    if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
+      let facebookview = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+      facebookview.addImage(imageview.image)
+      presentViewController(facebookview, animated: true, completion: nil)
+    } else {
+      let alert = UIAlertController(title: "Accounts", message: "Please login to a Facebook account to share.", preferredStyle: UIAlertControllerStyle.Alert)
+      alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+      self.presentViewController(alert, animated: true, completion: nil)
+    }
   }
 
 }
