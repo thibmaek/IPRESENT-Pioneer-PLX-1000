@@ -113,7 +113,6 @@
 		C35728DE1CDF788D004F25DE /* Turntablism */ = {
 			isa = PBXGroup;
 			children = (
-				C3FEB2EA1CE8E4C600DEA3EC /* Rotatable.swift */,
 				C36500721CE483080004F7BB /* Models */,
 				C3FEB2E91CE8DB3700DEA3EC /* Extensions */,
 				C3C871CC1CE3720A007E737B /* ViewControllers */,
@@ -165,6 +164,7 @@
 		C3FEB2E91CE8DB3700DEA3EC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C3FEB2EA1CE8E4C600DEA3EC /* Rotatable.swift */,
 				C3FEB2E51CE8D51900DEA3EC /* AVDemoExtension.swift */,
 			);
 			name = Extensions;
