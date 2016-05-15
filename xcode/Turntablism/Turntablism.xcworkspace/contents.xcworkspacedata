@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DemoViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Turntablism.xcodeproj">
    </FileRef>
    <FileRef
