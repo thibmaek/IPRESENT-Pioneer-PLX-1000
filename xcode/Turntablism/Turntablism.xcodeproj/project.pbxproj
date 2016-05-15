@@ -20,6 +20,10 @@
 		C3AD19F41CE8A47E0063895B /* (null) in Sources */ = {isa = PBXBuildFile; };
 		C3B6938A1CE36A03006538C0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B693891CE36A03006538C0 /* TabBarViewController.swift */; };
 		C3CCEE301CE8C40B007D53A7 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3CCEE2F1CE8C40B007D53A7 /* Social.framework */; };
+		C3FEB2E41CE8D2AC00DEA3EC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FEB2E31CE8D2AC00DEA3EC /* AVFoundation.framework */; };
+		C3FEB2E61CE8D51900DEA3EC /* AVDemoExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FEB2E51CE8D51900DEA3EC /* AVDemoExtension.swift */; };
+		C3FEB2E81CE8D82000DEA3EC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FEB2E71CE8D82000DEA3EC /* CoreImage.framework */; };
+		C3FEB2EB1CE8E4C600DEA3EC /* Rotatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FEB2EA1CE8E4C600DEA3EC /* Rotatable.swift */; };
 		C3FF60E71CE74AD500833598 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF60E61CE74AD500833598 /* FeaturesViewController.swift */; };
 		C3FF60E91CE770A900833598 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF60E81CE770A900833598 /* VideosViewController.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +43,10 @@
 		C3AD19F11CE895730063895B /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoViewController.swift; path = ../DemoViewController.swift; sourceTree = "<group>"; };
 		C3B693891CE36A03006538C0 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C3CCEE2F1CE8C40B007D53A7 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C3FEB2E31CE8D2AC00DEA3EC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C3FEB2E51CE8D51900DEA3EC /* AVDemoExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVDemoExtension.swift; sourceTree = "<group>"; };
+		C3FEB2E71CE8D82000DEA3EC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		C3FEB2EA1CE8E4C600DEA3EC /* Rotatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotatable.swift; sourceTree = "<group>"; };
 		C3FF60E61CE74AD500833598 /* FeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
 		C3FF60E81CE770A900833598 /* VideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		CEA7E888C6D28CAF765C71AC /* Pods-Turntablism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turntablism.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Turntablism/Pods-Turntablism.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FEB2E81CE8D82000DEA3EC /* CoreImage.framework in Frameworks */,
+				C3FEB2E41CE8D2AC00DEA3EC /* AVFoundation.framework in Frameworks */,
 				C3CCEE301CE8C40B007D53A7 /* Social.framework in Frameworks */,
 				C36500761CE48D200004F7BB /* CoreLocation.framework in Frameworks */,
 				C365006F1CE47FB60004F7BB /* MapKit.framework in Frameworks */,
@@ -72,6 +82,8 @@
 		A5ECDEDFECAFD11172CFDDBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C3FEB2E71CE8D82000DEA3EC /* CoreImage.framework */,
+				C3FEB2E31CE8D2AC00DEA3EC /* AVFoundation.framework */,
 				C3CCEE2F1CE8C40B007D53A7 /* Social.framework */,
 				C36500751CE48D200004F7BB /* CoreLocation.framework */,
 				C365006E1CE47FB60004F7BB /* MapKit.framework */,
@@ -102,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				C36500721CE483080004F7BB /* Models */,
+				C3FEB2E91CE8DB3700DEA3EC /* Extensions */,
 				C3C871CC1CE3720A007E737B /* ViewControllers */,
 				C3C871CB1CE371E3007E737B /* Storyboards */,
 				C3C871CD1CE37220007E737B /* System */,
@@ -146,6 +159,15 @@
 				C35728EB1CDF788D004F25DE /* Info.plist */,
 			);
 			name = System;
+			sourceTree = "<group>";
+		};
+		C3FEB2E91CE8DB3700DEA3EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3FEB2EA1CE8E4C600DEA3EC /* Rotatable.swift */,
+				C3FEB2E51CE8D51900DEA3EC /* AVDemoExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,10 +294,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3FF60E71CE74AD500833598 /* FeaturesViewController.swift in Sources */,
+				C3FEB2E61CE8D51900DEA3EC /* AVDemoExtension.swift in Sources */,
 				C36500711CE480550004F7BB /* StoresViewController.swift in Sources */,
 				C3FF60E91CE770A900833598 /* VideosViewController.swift in Sources */,
 				C36500741CE483170004F7BB /* Store.swift in Sources */,
 				C3AD19F21CE895730063895B /* DemoViewController.swift in Sources */,
+				C3FEB2EB1CE8E4C600DEA3EC /* Rotatable.swift in Sources */,
 				C3B6938A1CE36A03006538C0 /* TabBarViewController.swift in Sources */,
 				C35728E01CDF788D004F25DE /* AppDelegate.swift in Sources */,
 				C3AD19F41CE8A47E0063895B /* (null) in Sources */,
