@@ -35,6 +35,16 @@ class StoresViewController: UIViewController {
     // MARK: - Show pins, setup map
     mapview.addAnnotations(stores)
     mapview.showsTraffic = false
+  }
+
+  override func didReceiveMemoryWarning() {
+    // fuck pls dont come here again
+  }
+
+  // MARK: - Set navigation title for this tab
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.tabBarController?.navigationItem.title = "Pioneer Resellers"
     if CLLocationManager.locationServicesEnabled() {
       if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse {
         mapview.showsUserLocation = true
@@ -42,12 +52,6 @@ class StoresViewController: UIViewController {
         locationMgr.requestWhenInUseAuthorization()
       }
     }
-  }
-
-  // MARK: - Set navigation title for this tab
-  override func viewWillAppear(animated: Bool) {
-    super.viewWillAppear(animated)
-    self.tabBarController?.navigationItem.title = "Pioneer Resellers"
   }
 
 }
