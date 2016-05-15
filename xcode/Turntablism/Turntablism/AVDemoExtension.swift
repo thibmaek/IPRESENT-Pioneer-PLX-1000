@@ -54,7 +54,6 @@ extension DemoViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
     // MARK:- Initialize a CALayer and set the cameraview, start the session
     let rootLayer: CALayer = self.cameraview.layer
-    rootLayer.masksToBounds = true
     self.cameraLayer.frame = rootLayer.bounds
     rootLayer.addSublayer(self.cameraLayer)
     session.startRunning()

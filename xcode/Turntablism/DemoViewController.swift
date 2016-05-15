@@ -34,12 +34,13 @@ class DemoViewController: UIViewController {
     currentColor = "blue"
     model = "black"
     imageview.image = UIImage(named: "tt-black")
+    imageview.alpha = 0.5
 
     // MARK: - Create a new UIView as AVCapture background
     self.cameraview = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height))
     self.cameraview.contentMode = UIViewContentMode.ScaleAspectFill
     view.insertSubview(cameraview, belowSubview: imageview)
-
+    self.cameraview.rotate(degrees: -90)
     self.setupAVCapture()
   }
 
