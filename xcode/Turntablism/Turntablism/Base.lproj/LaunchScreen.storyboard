@@ -16,7 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="PioneerLogoLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="ptv-Xk-nIc">
+                                <rect key="frame" x="180" y="236" width="240" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="CWL-rV-Lu8"/>
+                                    <constraint firstAttribute="height" constant="148" id="Pad-iX-bAa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ptv-Xk-nIc" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="47y-C6-XPq"/>
+                            <constraint firstItem="ptv-Xk-nIc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qrL-q9-KdC"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +37,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PioneerLogoLaunchScreen" width="596" height="842"/>
+    </resources>
 </document>
