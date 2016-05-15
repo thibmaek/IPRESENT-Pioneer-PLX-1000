@@ -16,8 +16,8 @@
 		C36500711CE480550004F7BB /* StoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36500701CE480550004F7BB /* StoresViewController.swift */; };
 		C36500741CE483170004F7BB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36500731CE483170004F7BB /* Store.swift */; };
 		C36500761CE48D200004F7BB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36500751CE48D200004F7BB /* CoreLocation.framework */; };
+		C3AD19F21CE895730063895B /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AD19F11CE895730063895B /* DemoViewController.swift */; };
 		C3B6938A1CE36A03006538C0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B693891CE36A03006538C0 /* TabBarViewController.swift */; };
-		C3C871CF1CE37875007E737B /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C871CE1CE37875007E737B /* SliderViewController.swift */; };
 		C3FF60E71CE74AD500833598 /* FeaturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF60E61CE74AD500833598 /* FeaturesViewController.swift */; };
 		C3FF60E91CE770A900833598 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF60E81CE770A900833598 /* VideosViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,8 +34,8 @@
 		C36500701CE480550004F7BB /* StoresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoresViewController.swift; sourceTree = "<group>"; };
 		C36500731CE483170004F7BB /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		C36500751CE48D200004F7BB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C3AD19F11CE895730063895B /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoViewController.swift; path = ../DemoViewController.swift; sourceTree = "<group>"; };
 		C3B693891CE36A03006538C0 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		C3C871CE1CE37875007E737B /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		C3FF60E61CE74AD500833598 /* FeaturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturesViewController.swift; sourceTree = "<group>"; };
 		C3FF60E81CE770A900833598 /* VideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		CEA7E888C6D28CAF765C71AC /* Pods-Turntablism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turntablism.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Turntablism/Pods-Turntablism.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 			children = (
 				C35728DF1CDF788D004F25DE /* AppDelegate.swift */,
 				C3B693891CE36A03006538C0 /* TabBarViewController.swift */,
-				C3C871CE1CE37875007E737B /* SliderViewController.swift */,
+				C3AD19F11CE895730063895B /* DemoViewController.swift */,
 				C36500701CE480550004F7BB /* StoresViewController.swift */,
 				C3FF60E61CE74AD500833598 /* FeaturesViewController.swift */,
 				C3FF60E81CE770A900833598 /* VideosViewController.swift */,
@@ -267,10 +267,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3FF60E71CE74AD500833598 /* FeaturesViewController.swift in Sources */,
-				C3C871CF1CE37875007E737B /* SliderViewController.swift in Sources */,
 				C36500711CE480550004F7BB /* StoresViewController.swift in Sources */,
 				C3FF60E91CE770A900833598 /* VideosViewController.swift in Sources */,
 				C36500741CE483170004F7BB /* Store.swift in Sources */,
+				C3AD19F21CE895730063895B /* DemoViewController.swift in Sources */,
 				C3B6938A1CE36A03006538C0 /* TabBarViewController.swift in Sources */,
 				C35728E01CDF788D004F25DE /* AppDelegate.swift in Sources */,
 			);

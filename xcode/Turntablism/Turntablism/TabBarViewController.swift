@@ -29,7 +29,7 @@ class TabBarViewController: UITabBarController {
     actionButton.layer.cornerRadius = actionButtonFrame.height/2
     self.view.addSubview(actionButton)
 
-    actionButton.setImage(UIImage(named: "ProductFeaturesIcon"), forState: UIControlState.Normal)
+    actionButton.setImage(UIImage(named: "DemoModeIcon"), forState: UIControlState.Normal)
     actionButton.addTarget(self, action: #selector(TabBarViewController.showActionView(_:)), forControlEvents: UIControlEvents.TouchUpInside)
 
     self.view.layoutIfNeeded()
