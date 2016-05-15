@@ -7,31 +7,69 @@
 //
 
 import UIKit
+import AVFoundation
 import Social
 
 class DemoViewController: UIViewController {
 
   @IBOutlet weak var imageview: UIImageView!
+  var cameraview: UIView!
+
+  // MARK:- Initialize vars for changing the led & model
   var model: String!
   var currentColor: String!
 
-  // MARK: - Load & Unload image to the view
+  // MARK:- Initialize vars for capturing video trough AVFoundation
+  var videoDataOutput: AVCaptureVideoDataOutput!
+  var videoDataOutputQueue: dispatch_queue_t!
+  var cameraLayer: AVCaptureVideoPreviewLayer!
+  var captureDevice: AVCaptureDevice!
+  let session=AVCaptureSession()
+  var currentFrame: CIImage!
+  var done = false
+
   override func viewDidLoad() {
+    // MARK: - Load & Unload image to the view
     super.viewDidLoad()
     currentColor = "blue"
     model = "black"
     imageview.image = UIImage(named: "tt-black")
+
+    // MARK: - Create a new UIView as AVCapture background
+    self.cameraview = UIView(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height))
+    self.cameraview.contentMode = UIViewContentMode.ScaleAspectFill
+    view.insertSubview(cameraview, belowSubview: imageview)
+
+    self.setupAVCapture()
   }
 
   // MARK: - Set navigation title for this tab
   override func viewWillAppear(animated: Bool) {
     super.viewWillAppear(animated)
+    if !done {session.startRunning()}
     self.tabBarController?.navigationItem.title = "PLX-1000 Demo Mode"
   }
 
   // MARK: - Reset the image when the tab switches
   override func viewDidDisappear(animated: Bool) {
+    self.stopCamera()
     changeImage(currentColor, model: model)
+  }
+
+  override func didReceiveMemoryWarning() {
+    self.stopCamera()
+    let alert = UIAlertController(title: "Memory Warning", message: "Live preview stopped due to insufficient memory available for device.", preferredStyle: UIAlertControllerStyle.Alert)
+    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+    self.presentViewController(alert, animated: true, completion: nil)
+  }
+
+  // MARK: - If the device rotates, make sure the AVCapture layer does too
+  override func shouldAutorotate() -> Bool {
+    if (UIDevice.currentDevice().orientation == UIDeviceOrientation.LandscapeLeft ||
+      UIDevice.currentDevice().orientation == UIDeviceOrientation.LandscapeRight ||
+      UIDevice.currentDevice().orientation == UIDeviceOrientation.Unknown) {
+      return false
+    } else {return true}
   }
 
   // MARK: - Dynamically change image trough sent color param

@@ -21,7 +21,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIo-Am-Iqi">
                                 <rect key="frame" x="20" y="327" width="560" height="204"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">The PLX-1000 is precision engineered for the booth, drawing on 50 years’ experience of making high-end turntables. The result is a familiar layout with some next generation improvements, including a high-torque direct drive system, multi-pitch control, club-grade build and sound quality, and detachable power and audio cables. It’s solidly built for excellent vibration damping and ultra-precise, high-grade audio playback.
+                                <string key="text">The PLX-1000 is precision engineered for the booth, drawing on 50 years’ experience of making high-end turntables. The result is a familiar layout with some next generation improvements, including a high-torque direct drive system, multi-pitch control, club-grade build and sound quality, and detachable power and audio cables. It’s solidly built for excellent vibration damping and ultra-precise, high-grade audio playback.
 
 Combine the PLX-1000 with your DJM mixer for the ideal set-up for turntablists and vinyl enthusiasts.
 
@@ -30,7 +30,7 @@ KEY FEATURES:
 ✓ Multi-tempo control lets you instantly pick up or slow down the track to ±8%, ±16% and ±50%, while a simple reset button instantly reverts to ±0%.
 ✓ Interchangeable power and audio cables can be easily connected and replaced, and pro-grade gold-plated RCA jacks ensure low impedance and an amazing sound quality.
 
-See all specifications at http://www.pioneerdj.com/en/product/turntable/plx-1000/gold/overview/#/color-picker</mutableString>
+See all specifications at http://www.pioneerdj.com/en/product/turntable/plx-1000/gold/overview/#/color-picker</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -215,7 +215,7 @@ See all specifications at http://www.pioneerdj.com/en/product/turntable/plx-1000
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5A-RB-L2o">
                                         <rect key="frame" x="0.0" y="0.0" width="49" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mko-rv-w3G">

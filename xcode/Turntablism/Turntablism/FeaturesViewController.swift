@@ -27,6 +27,7 @@ class FeaturesViewController: UIViewController {
       let image = UIImage(named: String("Glam\(index)"))
       let imageview = UIImageView(image: image)
       imageview.frame = CGRectMake(xPos, 0, image!.size.width, image!.size.height)
+      imageview.contentMode = UIViewContentMode.ScaleAspectFit
       scrollview.addSubview(imageview)
       xPos = image!.size.width
       scrollview.contentSize = CGSizeMake(xPos, 0)
