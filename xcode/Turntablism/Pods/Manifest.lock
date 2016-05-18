@@ -1,15 +1,18 @@
 PODS:
+  - Mapbox-iOS-SDK (3.2.1)
   - UIColor-Hex-Swift (0.2.0)
   - YouTubePlayer (0.3.0)
 
 DEPENDENCIES:
+  - Mapbox-iOS-SDK
   - UIColor-Hex-Swift
   - YouTubePlayer
 
 SPEC CHECKSUMS:
+  Mapbox-iOS-SDK: 87de5f1223264da897d122f4b0b79266242f39bd
   UIColor-Hex-Swift: a35096d0d3f8630bd647e4df851e1d2a165d5117
   YouTubePlayer: 88713a96c356f2c88da8925eb61438eda88bcd57
 
-PODFILE CHECKSUM: d59bdbd5e15740e70822829cd144965ca78139bf
+PODFILE CHECKSUM: 21daf6eb85d6c230f042d951ff64a45e3eb2587a
 
 COCOAPODS: 1.0.0

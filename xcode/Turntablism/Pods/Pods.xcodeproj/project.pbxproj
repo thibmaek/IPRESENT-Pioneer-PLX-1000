@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A160E6DFED9FD37949731B791B46484 /* UIColor-Hex-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C122392368C3F32CDBD46A441B35BC /* UIColor-Hex-Swift-dummy.m */; };
-		0B1F90734411FAB9DD903F121D23F5F2 /* UIColor-Hex-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C11CDD6C77D24FB56DBED88AB977BE7B /* UIColor-Hex-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C6F0ADFAE01351F49676B0D984AF1F3 /* YTPlayer.html in Sources */ = {isa = PBXBuildFile; fileRef = 1D379832C7F61ACD3CB70E12A32E808B /* YTPlayer.html */; };
-		0E0914EC92C775D0CA36775720CC12FD /* YouTubePlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCFC14BBF6CC5B903245017F66B6086 /* YouTubePlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A160E6DFED9FD37949731B791B46484 /* UIColor-Hex-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4CF3DEC8CD8286A23F78ACD329C21F /* UIColor-Hex-Swift-dummy.m */; };
+		0B1F90734411FAB9DD903F121D23F5F2 /* UIColor-Hex-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6B1FF4CD4E11F42F7F629F24766A49A /* UIColor-Hex-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C6F0ADFAE01351F49676B0D984AF1F3 /* YTPlayer.html in Sources */ = {isa = PBXBuildFile; fileRef = BD0C63116DFEDC4CF239401818168FED /* YTPlayer.html */; };
+		0E0914EC92C775D0CA36775720CC12FD /* YouTubePlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45E835D6A9F6AE168859AC0F29AE65B6 /* YouTubePlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6F05D79A4D00B5F67EFA9111AF7A9A07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		7BAF0598E5C15A69898F53B080E75407 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		820C0316FD44DF6C3858B9EFDF3B6C28 /* Pods-Turntablism-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40391DAA24A30B7FA0D66BB0B4F382BF /* Pods-Turntablism-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		914B0A0B2D1910080B7BCD89FB3454FD /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F79B4C98008AFDCD74E86A2F6CB7A4F /* UIColor_Hex.swift */; };
-		A73716851BE93F487B814E3597ABA64B /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C937565FFF0E304FB3B22D469172102A /* YouTubePlayer.swift */; };
+		914B0A0B2D1910080B7BCD89FB3454FD /* UIColor_Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E749732D07D1BE25317E0FDF6BB071C8 /* UIColor_Hex.swift */; };
+		A73716851BE93F487B814E3597ABA64B /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829F9B96E526A09544CF8C15F0E2D8D5 /* YouTubePlayer.swift */; };
 		B2EF6EE9674395FF192C8AC702B35985 /* Pods-Turntablism-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DA282E8B4264F373DD2940A90CEDDC /* Pods-Turntablism-dummy.m */; };
 		BD81BFE86996137D5CCB2B81AC7D740E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		CFB37038E53499A2821007105FE4AEE1 /* YouTubePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30ED6ABF4CD1E0F4ACAA7585EA766055 /* YouTubePlayer-dummy.m */; };
-		F8DA3894A5CB8F2093E860CC73641243 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 1D379832C7F61ACD3CB70E12A32E808B /* YTPlayer.html */; };
+		CFB37038E53499A2821007105FE4AEE1 /* YouTubePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBB788D141CF271129BB74373B513EB /* YouTubePlayer-dummy.m */; };
+		F8DA3894A5CB8F2093E860CC73641243 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = BD0C63116DFEDC4CF239401818168FED /* YTPlayer.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,36 +40,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07C2C8B7C11CE8A902972D9D1F77F4A9 /* UIColor-Hex-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor-Hex-Swift.modulemap"; sourceTree = "<group>"; };
+		0D35E86CF2AAF4A477558BE1F6C49674 /* UIColor-Hex-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex-Swift.xcconfig"; sourceTree = "<group>"; };
+		10A79625955593DB40CBD92965CF7F9D /* UIColor-Hex-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UIColor-Hex-Swift.modulemap"; sourceTree = "<group>"; };
 		116ACBD9F53CC05FAD5DD9BF281FF80E /* Pods_Turntablism.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turntablism.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D379832C7F61ACD3CB70E12A32E808B /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
-		24B20F8AE226AEE64B87A8E0C407190B /* YouTubePlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouTubePlayer.xcconfig; sourceTree = "<group>"; };
-		25912B58FBEBE3BCF5787FA6B23AE91D /* UIColor-Hex-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-prefix.pch"; sourceTree = "<group>"; };
 		264AAFEE1D4E96B14506C2EE1B569503 /* Pods-Turntablism.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Turntablism.release.xcconfig"; sourceTree = "<group>"; };
-		2CCFC14BBF6CC5B903245017F66B6086 /* YouTubePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-umbrella.h"; sourceTree = "<group>"; };
+		2E510DF77CB12050E96A4967274E2309 /* YouTubePlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-prefix.pch"; sourceTree = "<group>"; };
 		2ECB2965ADBF641CA4BE8A33B420ABAC /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YouTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		30ED6ABF4CD1E0F4ACAA7585EA766055 /* YouTubePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouTubePlayer-dummy.m"; sourceTree = "<group>"; };
 		36D8D16E2056037DF846D4B6697EC492 /* Pods-Turntablism.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Turntablism.debug.xcconfig"; sourceTree = "<group>"; };
-		3F79B4C98008AFDCD74E86A2F6CB7A4F /* UIColor_Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor_Hex.swift; path = Pod/Classes/UIColor_Hex.swift; sourceTree = "<group>"; };
 		40391DAA24A30B7FA0D66BB0B4F382BF /* Pods-Turntablism-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Turntablism-umbrella.h"; sourceTree = "<group>"; };
+		45E835D6A9F6AE168859AC0F29AE65B6 /* YouTubePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-umbrella.h"; sourceTree = "<group>"; };
+		5066EEDFF82BAC43279D55A30D464755 /* YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YouTubePlayer.modulemap; sourceTree = "<group>"; };
+		549D13D55012B1688FE2E00C130D27D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54ABC60322697F36DBB0F96CDD6C4149 /* Pods-Turntablism-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Turntablism-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5B72740E5A7BB76E0D39D16BD4FE5260 /* UIColor-Hex-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-Hex-Swift.xcconfig"; sourceTree = "<group>"; };
-		60C122392368C3F32CDBD46A441B35BC /* UIColor-Hex-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-Swift-dummy.m"; sourceTree = "<group>"; };
+		5C66283ED111B3A34B6507086235B367 /* UIColor-Hex-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-prefix.pch"; sourceTree = "<group>"; };
 		610476E60C77A9F0D9FE9B6CDA4B6918 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE1852D102C9736F97C4BBB4A342FC8 /* Pods-Turntablism-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Turntablism-acknowledgements.plist"; sourceTree = "<group>"; };
 		76341C4C681201F7E28B1E800E790391 /* Pods-Turntablism-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turntablism-frameworks.sh"; sourceTree = "<group>"; };
-		80FDA9AF5760FD328FB50BE3E8264800 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		829F9B96E526A09544CF8C15F0E2D8D5 /* YouTubePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = YouTubePlayer/YouTubePlayer/YouTubePlayer.swift; sourceTree = "<group>"; };
 		89DA282E8B4264F373DD2940A90CEDDC /* Pods-Turntablism-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Turntablism-dummy.m"; sourceTree = "<group>"; };
-		8BFBE18133615CC4CD559D61BEEE3348 /* YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YouTubePlayer.modulemap; sourceTree = "<group>"; };
+		8DBB788D141CF271129BB74373B513EB /* YouTubePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouTubePlayer-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95A6F8E84445CF2A16BD9D3ECA7174B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2D1036772386AEEB09753089AAB42D9 /* YouTubePlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-prefix.pch"; sourceTree = "<group>"; };
+		AAB877264D3CDC6365D1291765036956 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC2B1D2532BA3E63E56781BC573A940 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
 		B3FD4CA687C105281F2A10500B7200DA /* Pods-Turntablism-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turntablism-resources.sh"; sourceTree = "<group>"; };
-		C11CDD6C77D24FB56DBED88AB977BE7B /* UIColor-Hex-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-umbrella.h"; sourceTree = "<group>"; };
-		C937565FFF0E304FB3B22D469172102A /* YouTubePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = YouTubePlayer/YouTubePlayer/YouTubePlayer.swift; sourceTree = "<group>"; };
+		BD0C63116DFEDC4CF239401818168FED /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
+		CE59FC8B006006D2065AEC4A9BE0D5BF /* YouTubePlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouTubePlayer.xcconfig; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D6B1FF4CD4E11F42F7F629F24766A49A /* UIColor-Hex-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-Hex-Swift-umbrella.h"; sourceTree = "<group>"; };
+		DF4CF3DEC8CD8286A23F78ACD329C21F /* UIColor-Hex-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Hex-Swift-dummy.m"; sourceTree = "<group>"; };
+		E749732D07D1BE25317E0FDF6BB071C8 /* UIColor_Hex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColor_Hex.swift; path = Pod/Classes/UIColor_Hex.swift; sourceTree = "<group>"; };
 		F919F7E11DC464640868006F5DCD76FC /* Pods-Turntablism.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Turntablism.modulemap"; sourceTree = "<group>"; };
-		FC4F76886C4F0BE8673FDC4D101B11AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,41 +101,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		042B39B7FD7800880FAB39997454F1CF /* Support Files */ = {
+		1C77A86660CF85834D0F869B200200B6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				80FDA9AF5760FD328FB50BE3E8264800 /* Info.plist */,
-				07C2C8B7C11CE8A902972D9D1F77F4A9 /* UIColor-Hex-Swift.modulemap */,
-				5B72740E5A7BB76E0D39D16BD4FE5260 /* UIColor-Hex-Swift.xcconfig */,
-				60C122392368C3F32CDBD46A441B35BC /* UIColor-Hex-Swift-dummy.m */,
-				25912B58FBEBE3BCF5787FA6B23AE91D /* UIColor-Hex-Swift-prefix.pch */,
-				C11CDD6C77D24FB56DBED88AB977BE7B /* UIColor-Hex-Swift-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UIColor-Hex-Swift";
-			sourceTree = "<group>";
-		};
-		04C31461959C3E16798930CADC1B0E29 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D5184D9CC26EABDE3A472E54245659C0 /* UIColor-Hex-Swift */,
-				E5D6B23F1566407AC0E44E63A1B62B76 /* YouTubePlayer */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		0DEC3F4A6CAE97BCA4AEDE059A5D3406 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FC4F76886C4F0BE8673FDC4D101B11AA /* Info.plist */,
-				8BFBE18133615CC4CD559D61BEEE3348 /* YouTubePlayer.modulemap */,
-				24B20F8AE226AEE64B87A8E0C407190B /* YouTubePlayer.xcconfig */,
-				30ED6ABF4CD1E0F4ACAA7585EA766055 /* YouTubePlayer-dummy.m */,
-				B2D1036772386AEEB09753089AAB42D9 /* YouTubePlayer-prefix.pch */,
-				2CCFC14BBF6CC5B903245017F66B6086 /* YouTubePlayer-umbrella.h */,
+				AAB877264D3CDC6365D1291765036956 /* Info.plist */,
+				5066EEDFF82BAC43279D55A30D464755 /* YouTubePlayer.modulemap */,
+				CE59FC8B006006D2065AEC4A9BE0D5BF /* YouTubePlayer.xcconfig */,
+				8DBB788D141CF271129BB74373B513EB /* YouTubePlayer-dummy.m */,
+				2E510DF77CB12050E96A4967274E2309 /* YouTubePlayer-prefix.pch */,
+				45E835D6A9F6AE168859AC0F29AE65B6 /* YouTubePlayer-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/YouTubePlayer";
+			sourceTree = "<group>";
+		};
+		200BE84A4807D14F76A47A0C411221C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD03614621CB81621891AEB1CE3C9EBA /* Mapbox-iOS-SDK */,
+				32B611427A5021A440774098367A7171 /* UIColor-Hex-Swift */,
+				90E92C17B6719A50C728FD0028ADF97F /* YouTubePlayer */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		2110CAED64A1D8ECA187C2222B4BEB3D /* Products */ = {
@@ -155,6 +143,37 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		2AE1BD05476920E79EC378A8046DE433 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADC2B1D2532BA3E63E56781BC573A940 /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32B611427A5021A440774098367A7171 /* UIColor-Hex-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				E749732D07D1BE25317E0FDF6BB071C8 /* UIColor_Hex.swift */,
+				3D83BD551D2BD6BA04FE4D8B65492E46 /* Support Files */,
+			);
+			path = "UIColor-Hex-Swift";
+			sourceTree = "<group>";
+		};
+		3D83BD551D2BD6BA04FE4D8B65492E46 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				549D13D55012B1688FE2E00C130D27D3 /* Info.plist */,
+				10A79625955593DB40CBD92965CF7F9D /* UIColor-Hex-Swift.modulemap */,
+				0D35E86CF2AAF4A477558BE1F6C49674 /* UIColor-Hex-Swift.xcconfig */,
+				DF4CF3DEC8CD8286A23F78ACD329C21F /* UIColor-Hex-Swift-dummy.m */,
+				5C66283ED111B3A34B6507086235B367 /* UIColor-Hex-Swift-prefix.pch */,
+				D6B1FF4CD4E11F42F7F629F24766A49A /* UIColor-Hex-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor-Hex-Swift";
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,17 +187,21 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				04C31461959C3E16798930CADC1B0E29 /* Pods */,
+				200BE84A4807D14F76A47A0C411221C4 /* Pods */,
 				2110CAED64A1D8ECA187C2222B4BEB3D /* Products */,
 				216E4701E0A9F2E2A231ED0471FB87EC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		937FE9D2DFA5675A609C223F5A967E84 /* Resources */ = {
+		90E92C17B6719A50C728FD0028ADF97F /* YouTubePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				829F9B96E526A09544CF8C15F0E2D8D5 /* YouTubePlayer.swift */,
+				BD0C63116DFEDC4CF239401818168FED /* YTPlayer.html */,
+				D8395EED5553957F5F57AAB9080BEFB7 /* Resources */,
+				1C77A86660CF85834D0F869B200200B6 /* Support Files */,
 			);
-			name = Resources;
+			path = YouTubePlayer;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -207,24 +230,19 @@
 			path = "Target Support Files/Pods-Turntablism";
 			sourceTree = "<group>";
 		};
-		D5184D9CC26EABDE3A472E54245659C0 /* UIColor-Hex-Swift */ = {
+		D8395EED5553957F5F57AAB9080BEFB7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3F79B4C98008AFDCD74E86A2F6CB7A4F /* UIColor_Hex.swift */,
-				042B39B7FD7800880FAB39997454F1CF /* Support Files */,
 			);
-			path = "UIColor-Hex-Swift";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		E5D6B23F1566407AC0E44E63A1B62B76 /* YouTubePlayer */ = {
+		DD03614621CB81621891AEB1CE3C9EBA /* Mapbox-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				C937565FFF0E304FB3B22D469172102A /* YouTubePlayer.swift */,
-				1D379832C7F61ACD3CB70E12A32E808B /* YTPlayer.html */,
-				937FE9D2DFA5675A609C223F5A967E84 /* Resources */,
-				0DEC3F4A6CAE97BCA4AEDE059A5D3406 /* Support Files */,
+				2AE1BD05476920E79EC378A8046DE433 /* Frameworks */,
 			);
-			path = YouTubePlayer;
+			path = "Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,7 +416,7 @@
 /* Begin XCBuildConfiguration section */
 		104DF283A2543F285B7398BD7DF790F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24B20F8AE226AEE64B87A8E0C407190B /* YouTubePlayer.xcconfig */;
+			baseConfigurationReference = CE59FC8B006006D2065AEC4A9BE0D5BF /* YouTubePlayer.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -428,7 +446,7 @@
 		};
 		15C7762A6AE7035F357CEC828CE37279 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24B20F8AE226AEE64B87A8E0C407190B /* YouTubePlayer.xcconfig */;
+			baseConfigurationReference = CE59FC8B006006D2065AEC4A9BE0D5BF /* YouTubePlayer.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -457,7 +475,7 @@
 		};
 		3F205DC499D4D2FD8812E8D5B2CA42C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B72740E5A7BB76E0D39D16BD4FE5260 /* UIColor-Hex-Swift.xcconfig */;
+			baseConfigurationReference = 0D35E86CF2AAF4A477558BE1F6C49674 /* UIColor-Hex-Swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -595,7 +613,7 @@
 		};
 		F38350313D399B7D9A009070D2546CF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B72740E5A7BB76E0D39D16BD4FE5260 /* UIColor-Hex-Swift.xcconfig */;
+			baseConfigurationReference = 0D35E86CF2AAF4A477558BE1F6C49674 /* UIColor-Hex-Swift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

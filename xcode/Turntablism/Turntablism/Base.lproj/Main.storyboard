@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KLn-X9-Vj8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KLn-X9-Vj8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -276,7 +276,7 @@ See all specifications at http://www.pioneerdj.com/en/product/turntable/plx-1000
             </objects>
             <point key="canvasLocation" x="1097" y="607"/>
         </scene>
-        <!--Store Locator-->
+        <!--Delegate-->
         <scene sceneID="8Xs-cu-J42">
             <objects>
                 <viewController id="gRE-cT-Y6h" customClass="StoresViewController" customModule="Turntablism" customModuleProvider="target" sceneMemberID="viewController">
@@ -284,25 +284,17 @@ See all specifications at http://www.pioneerdj.com/en/product/turntable/plx-1000
                         <viewControllerLayoutGuide type="top" id="kQN-R0-j96"/>
                         <viewControllerLayoutGuide type="bottom" id="tkI-yB-i2p"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="a1P-f9-s9F">
+                    <view key="view" contentMode="scaleToFill" id="a1P-f9-s9F" customClass="MGLMapView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsBuildings="NO" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39R-mH-EbP">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                            </mapView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="39R-mH-EbP" firstAttribute="top" secondItem="kQN-R0-j96" secondAttribute="bottom" id="APQ-sL-ypN"/>
-                            <constraint firstItem="39R-mH-EbP" firstAttribute="leading" secondItem="a1P-f9-s9F" secondAttribute="leadingMargin" constant="-20" id="M4m-BT-pq3"/>
-                            <constraint firstItem="tkI-yB-i2p" firstAttribute="top" secondItem="39R-mH-EbP" secondAttribute="bottom" id="Zbc-1T-8Um"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="39R-mH-EbP" secondAttribute="trailing" constant="-20" id="hx7-NN-YSw"/>
-                        </constraints>
+                        <connections>
+                            <outlet property="delegate" destination="gRE-cT-Y6h" id="n4g-Zl-KPN"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Store Locator" image="StoreLocatorIcon" id="Tt5-TL-H4i"/>
                     <connections>
-                        <outlet property="mapview" destination="39R-mH-EbP" id="V39-Vw-618"/>
+                        <outlet property="mapview" destination="a1P-f9-s9F" id="4gr-5I-6LZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JfS-VZ-oZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
